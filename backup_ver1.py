@@ -117,13 +117,14 @@ if len(comment) == 0:
 	target = today+os.sep+now+'.rar'
 else:
 	target = today+os.sep+now+'_'+ \
-	comment.replace('','_')+'.rar'
+	comment.replace(' ','_')+'.rar'
 
+print target
 if not os.path.exists(today):
 	os.mkdir(today)
 	print'success create dir',today
 	
-target = today + os.sep +now +'.rar'
+#target = today + os.sep +now +'.rar'
 # 5. We use the rar command in windows to put the files in a zip archive,you must to be sure  you have installed WinRARA and that in your path  
 #rar_command = "WinRAR A %s %s -r" % (target,source)  
 rar_command = r'"C:\Program Files\WinRAR\WinRAR.exe" A %s %s -r' % (target,source)
