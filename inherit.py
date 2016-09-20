@@ -37,5 +37,6 @@ t = Teacher('Mrs.shrividya',40,30000)
 s = Student('Swaroop',22,75)
 print 
 members =[t,s]
+
 for member in members:
 	member.tell()
