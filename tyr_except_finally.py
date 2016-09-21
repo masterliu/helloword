@@ -1,0 +1,1 @@
+# -*- coding: UTF-8 -*- #触发算法错误try:	print'try'	r = 10 / 0	print 'result:',rexcept ZeroDivisionError,e:	print 'except:',efinally:	print'finally'	print'end'
