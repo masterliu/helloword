@@ -8,7 +8,7 @@ name ='swaroop'
 if name.startswith('swa'):
 	print'yes.the string startswith"swa"'
 if 'a'in name:
-	print 'yes,it contains the string "a"'
+		print 'yes,it contains the string "a"'
 if name.find('war') != -1:
 	print 'yes,it contains the string "war"'
 	
