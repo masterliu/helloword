@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+#http://www.runoob.com/python/python-exercise-example18.html
 import string
 
 s = raw_input('input a string:')
