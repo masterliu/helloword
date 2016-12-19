@@ -1,0 +1,182 @@
+Index: tyr_except_finally.py
+===================================================================
+--- tyr_except_finally.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
++++ tyr_except_finally.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
+@@ -1,12 +0,0 @@
+-# -*- coding: UTF-8 -*- 
+-#触发算法错误
+-try:
+-	print'try'
+-	r = 10 / 0
+-	print 'result:',r
+-except ZeroDivisionError,e:
+-	print 'except:',e
+-finally:
+-	print'finally'
+-	
+-print'end'
+\ No newline at end of file
+Index: part 100/part14.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- part 100/part14.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
++++ part 100/part14.py	(revision )
+@@ -2,13 +2,13 @@
+ # 增强的格式化字符串format函数
+ def reduceNum(n):
+     print '{} ='.format(n),
+-    if not isinstance(n,int) or n <= 0:
++    if not isinstance(n, int) or n <= 0:
+         print 'input a number!'
+         exit()
+     elif n in [1]:
+         print '{}'.format(n)
+     while n not in [1]:
+-        for index in xrange(2,n + 1):
++        for index in xrange(2, n + 1):
+             if n % index == 0:
+                 n /= index
+                 if n == 1:
+@@ -17,4 +17,5 @@
+                     print '{} *'.format(index),
+                     break
+ 
++
+-reduceNum(90)
+\ No newline at end of file
++reduceNum(90)
+Index: part 100/part5.py
+===================================================================
+--- part 100/part5.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
++++ part 100/part5.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
+@@ -1,7 +0,0 @@
+-# -*- coding: UTF-8 -*-
+-i =[]
+-for x in range(3):
+-    x = int(raw_input("input number:\n"))
+-    i.append(x)
+-i.sort()
+-print i
+\ No newline at end of file
+Index: part 100/part1.py
+===================================================================
+--- part 100/part1.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
++++ part 100/part1.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
+@@ -1,6 +0,0 @@
+-# -*- coding: UTF-8 -*-
+-for i in range(1,5):
+-    for j in range(1,5):
+-        for k in range(1,5):
+-            if (i!=j) and (j!=k) and (i!=k):
+-                print i,j,k
+\ No newline at end of file
+Index: part 100/part3.py
+===================================================================
+--- part 100/part3.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
++++ part 100/part3.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
+@@ -1,8 +0,0 @@
+-# -*- coding: UTF-8 -*-
+-import math
+-
+-for i in range(100):
+-    x = int(math.sqrt(i + 100))  # sqrt 计算平方根
+-    y = int(math.sqrt(i + 268))  # sqrt 计算平方根
+-    if (x * x == i + 100) and (y * y == i + 268):
+-        print i
+Index: part 100/part8.py
+===================================================================
+--- part 100/part8.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
++++ part 100/part8.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
+@@ -1,11 +0,0 @@
+-# -*- coding: UTF-8 -*-
+-import time
+-for i in range(1,10):
+-    for j in range(1,10):
+-        rest=i * j
+-        print ('%d * %d=% -3d'%(i,j,rest))
+-    print ' '
+-
+-print time.ctime()
+-time.sleep(1)
+-print time.ctime()
+\ No newline at end of file
+Index: part 100/part6.py
+===================================================================
+--- part 100/part6.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
++++ part 100/part6.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
+@@ -1,20 +0,0 @@
+-# -*- coding: UTF-8 -*-
+-def fib(n):
+-    if n==1:
+-        return [1]
+-    if n ==2:
+-        return [1,1]
+-    fibs=[1,1]
+-    for i in range(2,n):
+-        fibs.append(fibs[-1]+fibs[-2])
+-    return fibs
+-#输出前10个斐波那契数列
+-print fib(10)
+-
+-#输出第10个斐波那契数列
+-def fib1(m):
+-    if m ==1 or m ==2:
+-        return 1
+-    return fib1(m-1)+fib1(m-2)
+-
+-print fib1(10)
+\ No newline at end of file
+Index: part 100/part19.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- part 100/part19.py	(revision )
++++ part 100/part19.py	(revision )
+@@ -0,0 +1,19 @@
++# -*- coding: UTF-8 -*-
++from sys import stdout
++for j in range(2,1001):
++    k = []
++    n = -1
++    s = j
++    for i in range(1,j):
++        if j %i ==0:
++            n += 1
++            s -= i
++            k.append(i)
++
++    if s == 0:
++        print j
++        for i in range(n):
++            stdout.write(str(k[i]))
++            stdout.write(' ')
++
++        print k[n]
+\ No newline at end of file
+Index: part 100/part4.py
+===================================================================
+--- part 100/part4.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
++++ part 100/part4.py	(revision 1564d506b83201273f6320b4959e75b7184413ac)
+@@ -1,18 +0,0 @@
+-# -*- coding: UTF-8 -*-
+-#按输入的日期,查询属于当年的第N天
+-year = int(raw_input('year:\n'))
+-month = int(raw_input('month:\n'))
+-day = int(raw_input('day:\n'))
+-
+-months =(0,31,59,90,120,151,181,212,243,273,304,334)
+-if 0<month<=12:
+-    sum = months[month-1]
+-else:
+-    print 'data error'
+-sum += day
+-leap = 0
+-if(year %400 ==0) or ((year %4==0)and (year%100!=0)):
+-    leap =1
+-if (leap==1)and(month>2):
+-    sum+=1
+-print 'it is the %d th day.'%sum
+\ No newline at end of file
