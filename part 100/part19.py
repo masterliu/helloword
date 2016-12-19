@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+
 from sys import stdout
 for j in range(2, 1001):
     k = []
@@ -17,4 +18,3 @@ for j in range(2, 1001):
             stdout.write(' ')
 
         print k[n]
-        
