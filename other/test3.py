@@ -1,0 +1,1 @@
+# -*- coding: UTF-8 -*-#父类class Animal(object):	def run(self):		print 'animal is running'#子类继承父类		class Dog(Animal):	def run(self):		print 'dog is running'	#子类增加方法	def eat(self):		print 'dog is eat'	dog = Dog()dog.run()
