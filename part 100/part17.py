@@ -1,8 +1,8 @@
 # -*- coding: UTF-8 -*-
-#http://www.runoob.com/python/python-exercise-example18.html
+# http://www.runoob.com/python/python-exercise-example18.html
 import string
 
-s = raw_input('input a string:')
+s = input('input a string:')
 zm = 0
 kg = 0
 no = 0
@@ -18,4 +18,4 @@ for i in s:
     else:
         ot += 1
 
-print '字母 = %d,空格 = %d,数字 = %d,其他 = %d' % (zm, kg, no, ot)
+print('字母 = %d,空格 = %d,数字 = %d,其他 = %d' % (zm, kg, no, ot))

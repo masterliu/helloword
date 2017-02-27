@@ -32,10 +32,10 @@ class TestDict(unittest.TestCase):
             value = d.empty
 
     def setUp(self):
-        print 'setup'
+        print ('setup')
 
     def tearDown(self):
-        print 'teardown'
+        print ('teardown')
 
     if __name__ == '__main__':
         unittest.main()
