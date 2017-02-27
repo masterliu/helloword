@@ -1,0 +1,1 @@
+import osdef search(kw, dir = os.path.abspath('.')):    for i in os.listdir(dir):        path=os.path.join(dir,i)        if os.path.isfile(path) and kw in i:            print path        if os.path.isdir(path):            search(kw,path)
