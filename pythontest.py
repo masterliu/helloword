@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #pythontest.py
 
+print ('-------------------------------------')
 #字符串内容
 
 name ='swaroop'
@@ -15,6 +16,41 @@ if name.find('war') != -1:
 delimiter = '_*_'
 mylist =['Brazil','Russia','India','China']
 print delimiter.join(mylist)
+
+movies =["the holy grail","the life of brian","the meaning of life"]
+movies.insert(1,1987)
+movies.insert(3,1986)
+movies.append(1988)
+print (movies)
+
+movies1=["the holy grail",1987,
+		 "the life of brian",1988,
+		 "the meaning of life",1981]
+for i in movies1:
+	print (i)
+
+print ('-------------------------------------')
+movies2 =["the holy grail",1987,"terry jones & Terry gilliam",91,
+			["graham chapman",["michael palin","john cleese",
+			"terry gilliam","Eric idle","Terry Jones"]]]
+for each_item in movies2:
+	if isinstance(each_item, list):
+		for nested in each_item:
+			if isinstance(nested,list):
+				for deeper in nested:
+					print (deeper)
+			else:
+				print(nested)
+	else:
+		print(each_item)
+
+print ('--------------def-----------------------')		
+
+# def 个函数
+from nester import print_lol
+
+print_lol(movies2)
+
 
 #对象引用
 '''
