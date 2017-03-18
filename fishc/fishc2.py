@@ -1,10 +1,10 @@
 # -*- coding: UTF-8 -*-
-
+# end="",告诉print用空格代替换行
 Year = input('input a Year:')
 
 # 判断输入是否是int类型,不是重新输入.
 while not isinstance(Year, int):
-	Year = int(input('input a Year:'))
+	Year = int(input('input b Year:'))
 # 定义变量判断是否是闰年
 is_leap = False
 # 能被400和100整除 能被4整除,不能被100整除,满足一个条件叫做闰年
