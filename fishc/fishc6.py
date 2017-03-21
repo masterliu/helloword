@@ -7,5 +7,7 @@ elif 80 < fens <= 90:
 	print('good B')
 elif 60 < fens <= 80:
 	print('ok C')
-else:
+elif 60 > fens >= 0:
 	print('D')
+else:
+	print('error')

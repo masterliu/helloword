@@ -6,5 +6,5 @@ t = 1
 for n in range(1,21):
     t *= n
     s += t
-print 'sum is %d'% s
+print 'sumer is %d'% s
 
