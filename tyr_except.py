@@ -1,1 +1,1 @@
-# -*- coding: UTF-8 -*- #触发 eoferror异常import systry:	s = raw_input('enter something--->')except EOFError:	print'\n Why did you do an EOFonme?'	sys.exit()#except:#	print '\n some error/exception occurred.'print'Done'
+# -*- coding: UTF-8 -*- # 触发 eoferror异常import systry:    s = input('enter something--->')except EOFError:    print('\n Why did you do an EOFonme?')    sys.exit()# except:# print '\n some error/exception occurred.'print('Done')
