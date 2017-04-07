@@ -11,5 +11,5 @@ print (arr)
 for i in range(2):
     name = str(i + 1) + ' ' + arr[i]['name'] + '.mp3'
     link = arr[i]['mp3Url']
-    urllib.request.urlretrieve(link, "d:\pythonbin/" + name)
+    urllib.request.urlretrieve(link, "/music" + name)
     print(name + '  down')
