@@ -1,4 +1,7 @@
 # -*- coding: UTF-8 -*-
+# 如何优雅的使用正则表达式
+# http://blog.csdn.net/goodboy5201314/article/details/42642077
+
 import urllib.request
 import re
 
