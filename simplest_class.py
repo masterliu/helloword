@@ -1,17 +1,20 @@
 # -*- coding: utf-8 -*-
 
-#__init__·½·¨
-#person('swaroop').sayHi()
+# __init__ï¿½ï¿½ï¿½ï¿½
+# person('swaroop').sayHi()
 class Person:
-	def __init__(self,name):
+	def __init__(self, name):
 		self.name = name
+
 	def sayHi(self):
-		print 'hello,my name is',self.name
+		print
+		('hello,my name is', self.name)
+
 
 p = Person('swaroop')
 p.sayHi()
 
-#¶ÔÏóµÄ·½·¨
+# ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
 '''
 class Person:
 	def sayHi(self):
@@ -20,7 +23,7 @@ class Person:
 p = Person()
 p.sayHi()
 '''
-# Àà
+# ï¿½ï¿½
 
 '''
 class Person:

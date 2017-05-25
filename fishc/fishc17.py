@@ -16,9 +16,9 @@ def url_open(url):
 
 def get_img(html):
     p = r'<img class="BDE_Image" src="([^"]+\.jpg)"'
-    imglist = re.findall(p, html)
+    imgelist = re.findall(p, html)
 
-    for each in imglist:
+    for each in imgelist:
         filename = each.split("/")[-1]
         urllib.request.urlretrieve(each, filename, None)
 
